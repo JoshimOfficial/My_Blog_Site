@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshim's Blog</title>
+    <link rel="shortcut icon" href="./imgs/fav/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Rubik:ital,wght@1,300&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+</head>
+<body class="font bg-gray-800 text-green-400">
+
+<!-- The menu here -->
+<div id="side-menu" class="md:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
+flex flex-col space-y-5 text-white duration-300">
+    <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+    <a class="hover:text-green-500" href="#">Home</a>
+    <a class="hover:text-green-500" href="#">Blogs</a>
+    <a class="hover:text-green-500" href="#">Todays Blog</a>
+    <a class="hover:text-green-500" href="#">Category</a>
+    <a class="hover:text-green-500" href="#">Privacy Policy</a>
+</div>
+
+
+<main class="p-2 bg-gray-800 text-white flex justify-between  md:hidden">
+    <!-- This is used to open the menu -->
+    <span class="cursor-pointer text-xl" onclick="openMenu()">&#9776; Joshim'sBlog</span>
+    <span></span>
+    <a href="login.html"><span class="material-icons cursor-pointer mt-1">account_circle</span></a>
+</main>
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="block w-full" alt="..."/>
+        <div class="carousel-caption md:block absolute text-center">
+          <h5 class="text-sm">First slide label</h5>
+          <p class="hidden">Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="block w-full" alt="..."/>
+        <div class="carousel-caption md:block absolute text-center">
+          <h5 class="text-sm">Second slide label</h5>
+          <p class="hidden">Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+          class="block w-full"
+          alt="..."/>
+        <div class="carousel-caption md:block absolute text-center">
+          <h5 class="text-sm">Third slide label</h5>
+          <p class="hidden">Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <span class="text-gray-400 relative top-2 w-full flex items-center">Pinned Blog:
+    <span class="material-icons">push_pin</span>
+</span>
+
+<div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+<img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover">
+
+<div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+   <span>This is testing blog post title 01</span>
+   <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+
+   <div class="flex flex-row justify-between items-center">
+    <span class="flex items-center text-gray-500">
+        <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+        13/09/2022
+    </span>
+    <span class="flex flex-row items-center text-gray-500">
+        <div class="flex">            
+            <span class="material-icons" style="font-size: 20px;">visibility</span>
+            <span class="ml-1">120</span>
+        </div>
+
+        <div class="flex ml-4">
+            <span class="material-icons">textsms</span></div>
+            <span class="ml-2">29</span>
+    </span>
+   </div>
+</div>
+
+</div>
+
+
+
+
+
+    <span class="text-gray-400 relative top-2 w-full flex items-center">Fatured Blogs:
+        <span class="material-icons ml-1">import_contacts</span>
+    </span>
+
+  <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+    <img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+
+    <div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+       <span>This is testing blog post title 01</span>
+       <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+
+       <div class="flex flex-row justify-between items-center">
+        <span class="flex items-center text-gray-500">
+            <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+            13/09/2022
+        </span>
+        <span class="flex flex-row items-center text-gray-500">
+            <div class="flex">            
+                <span class="material-icons" style="font-size: 20px;">visibility</span>
+                <span class="ml-1">120</span>
+            </div>
+
+            <div class="flex ml-4">
+                <span class="material-icons">textsms</span></div>
+                <span class="ml-2">29</span>
+        </span>
+       </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+  <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+    <img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+
+    <div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+       <span>This is testing blog post title 01</span>
+       <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+
+       <div class="flex flex-row justify-between items-center">
+        <span class="flex items-center text-gray-500">
+            <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+            13/09/2022
+        </span>
+        <span class="flex flex-row items-center text-gray-500">
+            <div class="flex">            
+                <span class="material-icons" style="font-size: 20px;">visibility</span>
+                <span class="ml-1">120</span>
+            </div>
+
+            <div class="flex ml-4">
+                <span class="material-icons">textsms</span></div>
+                <span class="ml-2">29</span>
+        </span>
+       </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+  <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+    <img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+
+    <div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+       <span>This is testing blog post title 01</span>
+       <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+
+       <div class="flex flex-row justify-between items-center">
+        <span class="flex items-center text-gray-500">
+            <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+            13/09/2022
+        </span>
+        <span class="flex flex-row items-center text-gray-500">
+            <div class="flex">            
+                <span class="material-icons" style="font-size: 20px;">visibility</span>
+                <span class="ml-1">120</span>
+            </div>
+
+            <div class="flex ml-4">
+                <span class="material-icons">textsms</span></div>
+                <span class="ml-2">29</span>
+        </span>
+       </div>
+    </div>
+    
+  </div>
+
+
+
+
+  <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+    <img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+
+    <div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+       <span>This is testing blog post title 01</span>
+       <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+
+       <div class="flex flex-row justify-between items-center">
+        <span class="flex items-center text-gray-500">
+            <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+            13/09/2022
+        </span>
+        <span class="flex flex-row items-center text-gray-500">
+            <div class="flex">            
+                <span class="material-icons" style="font-size: 20px;">visibility</span>
+                <span class="ml-1">120</span>
+            </div>
+
+            <div class="flex ml-4">
+                <span class="material-icons">textsms</span></div>
+                <span class="ml-2">29</span>
+        </span>
+       </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+  <span class="text-gray-400 relative top-2 w-full flex items-center">Recently Added:
+    <span class="material-icons ml-1">access_time_filled</span>
+</span>
+
+<div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+<img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+
+<div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+   <span>This is testing blog post title 01</span>
+   <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+
+   <div class="flex flex-row justify-between items-center">
+    <span class="flex items-center text-gray-500">
+        <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+        13/09/2022
+    </span>
+    <span class="flex flex-row items-center text-gray-500">
+        <div class="flex">            
+            <span class="material-icons" style="font-size: 20px;">visibility</span>
+            <span class="ml-1">120</span>
+        </div>
+
+        <div class="flex ml-4">
+            <span class="material-icons">textsms</span></div>
+            <span class="ml-2">29</span>
+    </span>
+   </div>
+</div>
+
+</div>
+
+  
+
+
+
+<div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+    <img src="./imgs/pics/profile.jpg" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover">
+    
+    <div class="flex flex-col ml-2 w-3/4 break-words text-sm">
+       <span>This is testing blog post title 01</span>
+       <span class="text-gray-400 text-[12px]">This is short description of this blog no 01. </span>
+    
+       <div class="flex flex-row justify-between items-center">
+        <span class="flex items-center text-gray-500">
+            <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+            13/09/2022
+        </span>
+        <span class="flex flex-row items-center text-gray-500">
+            <div class="flex">            
+                <span class="material-icons" style="font-size: 20px;">visibility</span>
+                <span class="ml-1">120</span>
+            </div>
+    
+            <div class="flex ml-4">
+                <span class="material-icons">textsms</span></div>
+                <span class="ml-2">29</span>
+        </span>
+       </div>
+    </div>
+    
+    </div>
+
+    <hr class="mt-2 ">
+
+    <div class="text-center mt-10 underline text-gray-500">On This Blog Site</div>
+    <div class="flex flex-row w-full mt-3">
+
+        <div class="flex flex-row justify-around w-full">
+            <div class="flex flex-row w-fit border border-gray-700 bg-gray-800 p-2 rounded">
+                <div class="flex flex-col items-center text-center text-sm m-auto">
+                    <span class="material-icons text-gray-500"> groups</span>
+                    <span>Total Visitores: 1250+</span>
+                </div>
+            </div>
+    
+    
+            <div class="flex flex-row w-fit border border-gray-700 bg-gray-800 p-2 rounded">
+                <div class="flex flex-col items-center text-center text-sm m-auto">
+                    <span class="material-icons text-gray-500" > disabled_visible</span>
+                    <span>Total Views: 1250+</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="flex flex-row w-full mt-3">
+
+        <div class="flex flex-row justify-around w-full">
+            <div class="flex flex-row w-fit border border-gray-700 bg-gray-800 p-2 rounded">
+                <div class="flex flex-col items-center text-center text-sm m-auto">
+                    <span class="material-icons text-gray-500"> post_add</span>
+                    <span>Total Posts: 1250+</span>
+                </div>
+            </div>
+    
+    
+            <div class="flex flex-row w-fit border border-gray-700 bg-gray-800 p-2 rounded">
+                <div class="flex flex-col items-center text-center text-sm m-auto">
+                    <span class="material-icons text-gray-500"> toggle_on</span>
+                    <span>Active Now: 1250+</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="flex flex-col w-full bg-gray-900 p-2 rounded text-sm justify-between text-center mt-24">
+        <div class="flex flex-row">
+            <div class="flex flex-col items-center w-1/2">
+                <span class="material-icons">home</span>
+                <span class="text-gray-500">Jhenaidah, HSS road</span>
+                <span class="text-gray-500">Jhenaidah at Zero point.</span>
+            </div>
+    
+    
+            <div class="flex flex-col items-center w-1/2 ">
+                <span class="material-icons">lock_person</span>
+                <span class="text-gray-500">This is  a fully personal blog. Only admin can post, edit, delete the posts.</span>
+            </div>
+        </div>
+
+
+        <div class="flex flex-row mt-5">
+            <div class="flex flex-col items-center w-1/2">
+                <span class="material-icons">call</span>
+                <span class="text-gray-500">+9905254820</span>
+                <span class="text-gray-500">+9905254820</span>
+            </div>
+    
+    
+            <div class="flex flex-col items-center w-1/2">
+                <span class="material-icons">alternate_email</span>
+                <span class="text-gray-500">Mail me @: idkhs8211@gmail.com</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+

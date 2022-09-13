@@ -21,6 +21,19 @@
 </head>
 <body class="font bg-gray-800 text-green-400">
 
+    <div class="hidden md:flex md:justify-between md:flex-row md:relative md:z-10 md:bg-[#1f293796] p-2 items-center">
+        <span class="text-xl text-white ">Joshim'sBlog</span>
+        <ul class="flex  justify-around w-[400px]">
+            <li><a class="hover:text-green-500" href="#">Home</a></li>
+            <li><a class="hover:text-green-500" href="#">Blogs</a></li>
+            <li><a class="hover:text-green-500" href="#">Today's Blogs</a></li>
+            <li><a class="hover:text-green-500" href="#">Category</a></li>
+            <li><a class="hover:text-green-500" href="#">About</a></li>
+        </ul>
+        <a href="login.html"><span class="material-icons cursor-pointer mt-1 text-white">account_circle</span></a>
+    </div>
+
+
 <!-- The menu here -->
 <div id="side-menu" class="md:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
 flex flex-col space-y-5 text-white duration-300">
@@ -43,7 +56,7 @@ flex flex-col space-y-5 text-white duration-300">
 
 
 
-<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide relative md:-top-14 " data-bs-ride="carousel">
     <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -51,14 +64,14 @@ flex flex-col space-y-5 text-white duration-300">
     </div>
     <div class="carousel-inner relative w-full overflow-hidden">
       <div class="carousel-item active relative float-left w-full">
-        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="block w-full" alt="..."/>
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="block w-full lg:h-[100vh]" alt="..."/>
         <div class="carousel-caption md:block absolute text-center">
           <h5 class="text-sm">First slide label</h5>
           <p class="hidden">Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item relative float-left w-full">
-        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="block w-full" alt="..."/>
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="block w-full lg:h-[100vh]" alt="..."/>
         <div class="carousel-caption md:block absolute text-center">
           <h5 class="text-sm">Second slide label</h5>
           <p class="hidden">Some representative placeholder content for the second slide.</p>
@@ -67,7 +80,7 @@ flex flex-col space-y-5 text-white duration-300">
       <div class="carousel-item relative float-left w-full">
         <img
           src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-          class="block w-full"
+          class="block w-full lg:h-[100vh]"
           alt="..."/>
         <div class="carousel-caption md:block absolute text-center">
           <h5 class="text-sm">Third slide label</h5>
@@ -86,14 +99,16 @@ flex flex-col space-y-5 text-white duration-300">
     </button>
   </div>
 
+  
+  <div class="lg:container lg:m-auto">
 
-
+    
   <span class="text-gray-400 relative top-2 w-full flex items-center">Pinned Blog:
     <span class="material-icons">push_pin</span>
 </span>
 
 <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-<img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover">
+<img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover lg:w-[150px]">
 
 <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
     <div class="flex flex-col">
@@ -106,6 +121,21 @@ flex flex-col space-y-5 text-white duration-300">
         <span class="material-icons" style="font-size: 20px;">calendar_month</span>
         13/09/2022
     </span>
+
+
+    <div class="hidden sm:text-gray-500 sm:flex ">
+        <span class="material-icons">sell</span>
+        <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+    </div>
+
+
+    <div class="hidden md:text-gray-500 md:flex ">
+        <span class="material-icons">cloud_done</span>
+        <span class="flex ml-1">Uploaded by Admin</span>
+    </div>
+
+
+
     <span class="flex flex-row items-center text-gray-500">
         <div class="flex">            
             <span class="material-icons" style="font-size: 20px;">visibility</span>
@@ -125,12 +155,12 @@ flex flex-col space-y-5 text-white duration-300">
 
 
 
-    <span class="text-gray-400 relative top-2 w-full flex items-center">Fatured Blogs:
+    <span class="text-gray-400 relative top-2 w-full flex items-center md:mt-5 lg:mt-16">Fatured Blogs:
         <span class="material-icons ml-1">import_contacts</span>
     </span>
 
   <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover lg:w-[150px]">
 
     <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
         <div class="flex flex-col">
@@ -143,7 +173,19 @@ flex flex-col space-y-5 text-white duration-300">
             <span class="material-icons" style="font-size: 20px;">calendar_month</span>
             13/09/2022
         </span>
-        <span class="flex flex-row items-center text-gray-500">
+
+        <div class="hidden sm:text-gray-500 sm:flex ">
+            <span class="material-icons">sell</span>
+            <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+        </div>
+
+
+        <div class="hidden md:text-gray-500 md:flex ">
+            <span class="material-icons">cloud_done</span>
+            <span class="flex ml-1">Uploaded by Admin</span>
+        </div>
+
+        <span class="flex flex-row lg:justify-end items-center text-gray-500">
             <div class="flex">            
                 <span class="material-icons" style="font-size: 20px;">visibility</span>
                 <span class="ml-1">120</span>
@@ -164,7 +206,7 @@ flex flex-col space-y-5 text-white duration-300">
 
 
   <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover lg:w-[150px]">
 
     <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
         <div class="flex flex-col">
@@ -177,6 +219,19 @@ flex flex-col space-y-5 text-white duration-300">
             <span class="material-icons" style="font-size: 20px;">calendar_month</span>
             13/09/2022
         </span>
+
+        
+        <div class="hidden sm:text-gray-500 sm:flex ">
+            <span class="material-icons">sell</span>
+            <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+        </div>
+
+
+        <div class="hidden md:text-gray-500 md:flex ">
+            <span class="material-icons">cloud_done</span>
+            <span class="flex ml-1">Uploaded by Admin</span>
+        </div>
+
         <span class="flex flex-row items-center text-gray-500">
             <div class="flex">            
                 <span class="material-icons" style="font-size: 20px;">visibility</span>
@@ -197,7 +252,7 @@ flex flex-col space-y-5 text-white duration-300">
 
 
   <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover lg:w-[150px]">
 
     <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
         <div class="flex flex-col">
@@ -210,6 +265,21 @@ flex flex-col space-y-5 text-white duration-300">
             <span class="material-icons" style="font-size: 20px;">calendar_month</span>
             13/09/2022
         </span>
+
+
+
+        <div class="hidden sm:text-gray-500 sm:flex ">
+            <span class="material-icons">sell</span>
+            <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+        </div>
+
+
+        <div class="hidden md:text-gray-500 md:flex ">
+            <span class="material-icons">cloud_done</span>
+            <span class="flex ml-1">Uploaded by Admin</span>
+        </div>
+
+
         <span class="flex flex-row items-center text-gray-500">
             <div class="flex">            
                 <span class="material-icons" style="font-size: 20px;">visibility</span>
@@ -229,7 +299,7 @@ flex flex-col space-y-5 text-white duration-300">
 
 
   <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover lg:w-[150px]">
 
     <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
         <div class="flex flex-col">
@@ -242,6 +312,20 @@ flex flex-col space-y-5 text-white duration-300">
             <span class="material-icons" style="font-size: 20px;">calendar_month</span>
             13/09/2022
         </span>
+
+
+        <div class="hidden sm:text-gray-500 sm:flex ">
+            <span class="material-icons">sell</span>
+            <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+        </div>
+
+
+        <div class="hidden md:text-gray-500 md:flex ">
+            <span class="material-icons">cloud_done</span>
+            <span class="flex ml-1">Uploaded by Admin</span>
+        </div>
+
+
         <span class="flex flex-row items-center text-gray-500">
             <div class="flex">            
                 <span class="material-icons" style="font-size: 20px;">visibility</span>
@@ -262,12 +346,12 @@ flex flex-col space-y-5 text-white duration-300">
 
 
 
-  <span class="text-gray-400 relative top-2 w-full flex items-center">Recently Added:
+  <span class="text-gray-400 relative top-2 w-full flex items-center md:mt-5 lg:mt-16">Recently Added:
     <span class="material-icons ml-1">access_time_filled</span>
 </span>
 
 <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-<img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover">
+<img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px]  rounded object-cover lg:w-[150px]">
 
 <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
     <div class="flex flex-col">
@@ -280,6 +364,21 @@ flex flex-col space-y-5 text-white duration-300">
         <span class="material-icons" style="font-size: 20px;">calendar_month</span>
         13/09/2022
     </span>
+
+
+
+    <div class="hidden sm:text-gray-500 sm:flex ">
+        <span class="material-icons">sell</span>
+        <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+    </div>
+
+
+    <div class="hidden md:text-gray-500 md:flex ">
+        <span class="material-icons">cloud_done</span>
+        <span class="flex ml-1">Uploaded by Admin</span>
+    </div>
+
+
     <span class="flex flex-row items-center text-gray-500">
         <div class="flex">            
             <span class="material-icons" style="font-size: 20px;">visibility</span>
@@ -287,7 +386,8 @@ flex flex-col space-y-5 text-white duration-300">
         </div>
 
         <div class="flex ml-4">
-            <span class="material-icons">textsms</span></div>
+            <span class="material-icons">textsms</span>
+        </div>
             <span class="ml-2">29</span>
     </span>
    </div>
@@ -300,7 +400,7 @@ flex flex-col space-y-5 text-white duration-300">
 
 
 <div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
-    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover">
+    <img src="./imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover lg:w-[150px]">
     
     <div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm">
         <div class="flex flex-col">
@@ -313,6 +413,21 @@ flex flex-col space-y-5 text-white duration-300">
             <span class="material-icons" style="font-size: 20px;">calendar_month</span>
             13/09/2022
         </span>
+
+        
+        <div class="hidden sm:text-gray-500 sm:flex ">
+            <span class="material-icons">sell</span>
+            <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+        </div>
+
+
+        <div class="hidden md:text-gray-500 md:flex ">
+            <span class="material-icons">cloud_done</span>
+            <span class="flex ml-1">Uploaded by Admin</span>
+        </div>
+
+
+
         <span class="flex flex-row items-center text-gray-500">
             <div class="flex">            
                 <span class="material-icons" style="font-size: 20px;">visibility</span>
@@ -329,25 +444,44 @@ flex flex-col space-y-5 text-white duration-300">
     </div>
 
     <hr class="mt-2 ">
+    
+    <h1 class="mt-10 lg:mt-24 text-center ">OWNER</h1>
+    <div class="flex justify-center mt-2">
+    <div class="flex flex-col justify-center border border-gray-700 text-[12px] p-2 rounded w-full bg-slate-800 lg:w-1/2">
+        <div class="flex flex-col items-center">
+            <img src="./imgs/pics/admin.jpg" class="w-20 h-20 rounded-full object-cover border border-green-500"/>
+            <span class="mt-1">
+                @Admin
+            </span>
+        </div>
+        
+        <div class="flex">
+            <span class="text-gray-500 lg:text-sm text-center">All the posts or blogs written on this web site are controlled by the admin. User registration and log in system is currently disabled. Very soon new account creation and login system will be added to this blog site</span>
+        </div>
+    </div>
 
-    <div class="text-center mt-10 underline text-gray-500">On This Blog Site</div>
+    </div>
+
+    <div class="text-center underline mt-10 text-green-500 md:mt-5 lg:mt-24">On This Blog Site</div>
     <div class="flex flex-row w-full mt-3">
 
-        <div class="flex flex-row justify-around w-full">
-            <div class="flex flex-row  w-2/5 border border-gray-700 bg-gray-800 p-2 rounded">
+        <div class="flex flex-row justify-around w-full md:mt-5">
+                <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:h-32 lg:h-64 ">
+                        <div class="flex flex-col items-center text-center text-sm m-auto ">
+                            <span class="material-icons text-gray-500"> groups</span>
+                            <span class="text-[12px] md:text-sm">Total Visitores: 1250+</span>
+                        </div>
+                </div>
+
+
+            <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:h-32 lg:h-64">
                 <div class="flex flex-col items-center text-center text-sm m-auto">
-                    <span class="material-icons text-gray-500"> groups</span>
-                    <span>Total Visitores: 1250+</span>
+                    <span class="material-icons text-gray-500"> disabled_visible</span>
+                    <span class="text-[12px] md:text-sm">Total Views: 1250+</span>
                 </div>
             </div>
-    
-    
-            <div class="flex flex-row  w-2/5 border border-gray-700 bg-gray-800 p-2 rounded">
-                <div class="flex flex-col items-center text-center text-sm m-auto">
-                    <span class="material-icons text-gray-500" > disabled_visible</span>
-                    <span>Total Views: 1250+</span>
-                </div>
-            </div>
+
+
         </div>
 
     </div>
@@ -355,50 +489,52 @@ flex flex-col space-y-5 text-white duration-300">
 
     <div class="flex flex-row w-full mt-3">
         <div class="flex flex-row justify-around w-full">
-            <div class="flex flex-row w-2/5 border border-gray-700 bg-gray-800 p-2 rounded">
+            <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:h-32 lg:h-64">
                 <div class="flex flex-col items-center text-center text-sm m-auto">
                     <span class="material-icons text-gray-500"> post_add</span>
-                    <span>Total Posts: 1250+</span>
+                    <span class="text-[12px] md:text-sm">Total Posts: 1250+</span>
                 </div>
             </div>
     
     
-            <div class="flex flex-row  w-2/5 border border-gray-700 bg-gray-800 p-2 rounded">
+            <div class="flex flex-row  w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:h-32 lg:h-64">
                 <div class="flex flex-col items-center text-center text-sm m-auto">
                     <span class="material-icons text-gray-500"> toggle_on</span>
-                    <span>Active Now: 1250+</span>
+                    <span class="text-[12px] md:text-sm">Active Now: 1250+</span>
                 </div>
             </div>
         </div>
 
     </div>
 
+  </div>
 
-    <div class="flex flex-col w-full bg-gray-900 p-2 rounded text-sm justify-between text-center mt-24">
+
+    <div class="flex flex-col w-full bg-gray-900 p-2 rounded text-sm justify-between text-center mt-24 ">
         <div class="flex flex-row">
-            <div class="flex flex-col items-center w-1/2">
+            <div class="flex flex-col items-center w-1/2 h-32 text-[12px] md:text-sm">
                 <span class="material-icons">home</span>
                 <span class="text-gray-500">Jhenaidah, HSS road</span>
                 <span class="text-gray-500">Jhenaidah at Zero point.</span>
             </div>
     
     
-            <div class="flex flex-col items-center w-1/2 ">
+            <div class="flex flex-col items-center w-1/2 text-[12px] md:text-sm">
                 <span class="material-icons">lock_person</span>
-                <span class="text-gray-500">This is  a fully personal blog. Only admin can post, edit, delete the posts.</span>
+                <span class="text-gray-500">This is  fully  a personal blog. Only admin can post, edit, delete the posts.</span>
             </div>
         </div>
 
 
-        <div class="flex flex-row mt-5">
-            <div class="flex flex-col items-center w-1/2">
+        <div class="flex flex-row mt-3">
+            <div class="flex flex-col items-center w-1/2 text-[12px] md:text-sm">
                 <span class="material-icons">call</span>
                 <span class="text-gray-500">+9905254820</span>
                 <span class="text-gray-500">+9905254820</span>
             </div>
     
     
-            <div class="flex flex-col items-center w-1/2">
+            <div class="flex flex-col items-center w-1/2 text-[12px] md:text-sm">
                 <span class="material-icons">alternate_email</span>
                 <span class="text-gray-500">Mail me @: idkhs8211@gmail.com</span>
             </div>

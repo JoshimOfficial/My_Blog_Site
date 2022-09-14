@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshim's Blog</title>
+    <link rel="shortcut icon" href="./imgs/fav/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Rubik:ital,wght@1,300&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+</head>
+<body class="font bg-gray-800 text-green-400">
+
+    <div class="hidden md:flex md:justify-between md:flex-row md:relative md:z-10 md:bg-[#1f293796] p-2 items-center shadow-[5px_5px_5px_#1c242f]">
+        <span class="text-xl text-white ">Joshim'sBlog</span>
+        <ul class="flex  justify-around w-[400px] text-white">
+            <li><a class="hover:text-green-500 hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:text-green-500 hover:underline" href="blogs.html">Blogs</a></li>
+            <li><a class="hover:text-green-500 hover:underline" href="todays-blog.html">Today's Blogs</a></li>
+            <li>
+                <div class="flex justify-center">
+                    <div>
+                      <div class="dropdown relative">
+                        <span class="dropdown-toggle font cursor-pointer leading-tight rounded shadow-md hover:text-green-500 hover:underline hover:shadow-lg" type="button" id="dropdownMenuButton1ds" data-bs-toggle="dropdown" aria-expanded="false">
+                          Category
+                        </span>
+                        <ul
+                          class=" dropdown-menu min-w-max absolute bg-white  text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden  m-0 bg-clip-padding border-none" aria-labelledby="dropdownMenuButton1ds" >
+                
+                          <li>
+                            <a class=" dropdown-item text-sm  py-2 px-4 font-normal  block w-full  whitespace-nowrap bg-transparent text-gray-400 pointer-events-none" href="#">Select a category</a>
+                          </li>
+                
+                          <li>
+                            <a
+                              class=" dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 "
+                              href="#">01</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class=" dropdown-item text-sm py-2 px-4 font-normal block w-full  whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                              href="#" >03</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+            </li>
+            <li><a class="hover:text-green-500 hover:underline" href="about.html">About</a></li>
+        </ul>
+        <a href="login.html"><span class="material-icons cursor-pointer mt-1 text-white">account_circle</span></a>
+    </div>
+
+
+<!-- The menu here -->
+<div id="side-menu" class="md:hidden fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
+flex flex-col space-y-5 text-white duration-300 shadow-[5px_5px_5px_#1c242f]">
+    <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+    <a class="hover:text-green-500 hover:underline" href="index.html">Home</a>
+    <a class="hover:text-green-500 hover:underline" href="blogs.html">Blogs</a>
+    <a class="hover:text-green-500 hover:underline" href="todays-blog.html">Todays Blog</a>
+    <a class="hover:text-green-500 hover:underline" href="#">Category</a>
+    <a class="hover:text-green-500 hover:underline" href="about.html">About</a>
+</div>
+
+
+<main class="p-2 bg-gray-800 text-white flex justify-between shadow-[5px_5px_5px_#1c242f] md:hidden">
+    <!-- This is used to open the menu -->
+    <span class="cursor-pointer text-xl" onclick="openMenu()">&#9776; Joshim'sBlog</span>
+    <span></span>
+    <a href="login.html"><span class="material-icons cursor-pointer mt-1">account_circle</span></a>
+</main>
+
+
+<div class="text-gray-500 mt-5 flex flex-col items-center lg:mt-32">
+  <h1 class="flex"><span class="material-icons">pix</span>About This Website:<span class="material-icons">pix</span> </h1>
+
+
+
+
+  <div class="fex flex-col lg:mt-20">
+
+  
+      <div class="flex flex-col w-full justify-center items-center mt-4 ">
+
+        <div class="flex flex-row justify-around w-full">
+
+            <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:w-2/2 md:h-32 lg:h-[250px]">
+                    <div class="flex flex-col items-center text-center text-sm m-auto ">
+                        <span class="material-icons text-gray-500"> lock_person</span>
+                        <span class="text-[12px] md:text-sm leading-tight">This website all about blogs content and controlled by admin only.</span>
+                    </div>
+            </div>
+
+
+
+        <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:w-2/2 md:h-32 lg:h-[250px]">
+            <div class="flex flex-col items-center text-center text-sm m-auto">
+              <span class="material-icons">screen_search_desktop</span>
+                <span class="text-[12px] md:text-sm leading-tight">Web search SEO currently off. Visit only invite links only. </span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="flex flex-row justify-around w-full mt-2">
+
+        <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:w-2/2 md:h-32 lg:h-[250px]">
+                <div class="flex flex-col items-center text-center text-sm m-auto ">
+                  <span class="material-icons text-4xl">replay_10</span>
+                    <span class="text-[12px] md:text-sm leading-tight">Update the website every 10 days later. No bugs issues.</span>
+                </div>
+        </div>
+
+
+    <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:w-2/2 md:h-32 lg:h-[250px]">
+        <div class="flex flex-col items-center text-center text-sm m-auto">
+          <span class="material-icons"> mode </span>
+            <span class="text-[12px] md:text-sm">All blog content you can see here is created by admin only. Admin posts those blog as his wish. There is no obligation</span>
+        </div>
+    </div>
+
+
+</div>
+
+      </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="flex flex-col w-full bg-gray-900 p-2 rounded text-sm justify-between text-center mt-24">
+
+  <div class="flex flex-col md:p-10">
+    
+    <div class="flex flex-row">
+
+
+      <div class="flex flex-col items-center w-1/2 h-32 text-[12px] md:text-sm">
+          <span class="material-icons">home</span>
+          <span class="text-gray-500">Jhenaidah, HSS road</span>
+          <span class="text-gray-500">Jhenaidah at Zero point.</span>
+      </div>
+
+      <div class="flex flex-col items-center w-1/2 text-[12px] md:text-sm">
+          <span class="material-icons">lock_person</span>
+          <span class="text-gray-500">This is  fully  a personal blog. Only admin can post, edit, delete the posts.</span>
+      </div>
+
+
+  </div>
+
+
+  <div class="flex flex-row mt-3">
+
+
+      <div class="flex flex-col items-center w-1/2 text-[12px] md:text-sm">
+          <span class="material-icons">call</span>
+          <span class="text-gray-500">+9905254820</span>
+          <span class="text-gray-500">+9905254820</span>
+      </div>
+
+      <div class="flex flex-col items-center w-1/2 text-[12px] md:text-sm">
+          <span class="material-icons">alternate_email</span>
+          <span class="text-gray-500">Mail me @: idkhs8211@gmail.com</span>
+      </div>
+
+
+  </div>
+  </div>
+
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+

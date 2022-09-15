@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshim's Blog</title>
+    <link rel="shortcut icon" href="../imgs/fav/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Rubik:ital,wght@1,300&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</head>
+<body class="font bg-gray-800 text-green-400">
+
+
+<!-- drawer init and show -->
+<div class="flex items-center">
+    <button class="text-whitefont-medium rounded-lg text-sm px-5 py-2.5 mr-2  text-white" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+        <span class="material-icons">menu</span>
+    </button>
+ </div>
+
+ 
+ <!-- drawer component -->
+ <div id="drawer-navigation" class="fixed z-40 h-screen p-4 overflow-y-auto bg-gray-900 w-80 dark:bg-gray-900" tabindex="-1" aria-labelledby="drawer-navigation-label">
+     <h5 id="drawer-navigation-label" class="text-base font-semibold text-white uppercase dark:text-gray-400">Admin Panel</h5>
+     <button type="button" data-drawer-dismiss="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+         <span class="sr-only">Close menu</span>
+     </button>
+   <div class="py-4 overflow-y-auto">
+       <ul class="space-y-2">
+          <li>
+             <a href="index.html" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-white hover:bg-gray-800 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-white group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                <span class="ml-3">Dashboard</span>
+             </a>
+          </li>
+          <li>
+             <button type="button" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                   <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-white dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
+                   <span class="flex-1 ml-3 text-left whitespace-nowrap">Blogs</span>
+                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+             </button>
+             <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                   <li>
+                      <a href="blog-list.html" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700">
+                        <span class="material-icons">list</span> &nbsp; Blog lists</a></a>
+                   </li>
+                   <li>
+                      <a href="edit-a-blog.html" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700">
+                        <span class="material-icons">edit</span> &nbsp; Edit a blog</a>
+                   </li>
+                   <li>
+                      <a href="write-a-blog.html" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700">
+                        <span class="material-icons">drive_file_rename_outline</span> &nbsp; Write a blog</a>
+                   </li>
+             </ul>
+          </li>
+          <li>
+            <button type="button" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example-category" data-collapse-toggle="dropdown-example-category">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap">Category</span>
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <ul id="dropdown-example-category" class="hidden py-2 space-y-2">
+                  <li>
+                     <a href="category-list.html" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700">
+                        <span class="material-icons">list</span> &nbsp; Category lists</a>
+                  </li>
+
+                  <li>
+                     <a href="add-a-category.html" class="flex items-center w-full p-2 text-base font-normal text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-800 dark:text-white dark:hover:bg-gray-700">
+                        <span class="material-icons">format_list_bulleted_add</span>
+                        Add a category
+                     </a>
+                  </li>
+            </ul>
+         </li>
+
+          <li>
+             <a href="inbox.html" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-white hover:bg-gray-800 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+                <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">3</span>
+             </a>
+          </li>
+
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-white hover:bg-gray-800 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap">Sign Out</span>
+             </a>
+          </li>
+
+       </ul>
+    </div>
+ </div>
+
+ <div class="flex flex-row w-full justify-center text-gray-400">
+    <span class="material-icons"> west</span>
+    <span>Dashbord</span>
+    <span class="material-icons"> east</span>
+</div>
+
+<div class="lg:container m-auto">
+   
+<div class="flex flex-col mt-5">
+       
+
+   <span class="text-gray-400 relative top-2 w-full flex items-center justify-between md:justify-start">
+     
+      <div class="flex">         
+         <span>Pinned Blog:</span>
+         <span class="material-icons">push_pin</span>
+      </div>
+
+      <div class="flex flex-row">
+         <span class="text-green-400"><a href="#">Read </a></span>
+         <span>&nbsp;||&nbsp;</span>
+         <span class="text-green-400"><a href="#">Edit</a></span>
+      </div>
+  </span>
+
+
+<div class="flex flex-row p-2 border border-gray-700 mt-3 rounded bg-slate-800 ">
+<img src="../imgs/pics/thmbnail.png" alt="Thumbnail_not_available" class="text-green-400 w-1/4 h-[100px] rounded object-cover lg:w-[150px] lg:h-[150px]">
+
+<div class="flex flex-col justify-between ml-2 w-3/4 break-words text-sm ">
+    <div class="flex flex-col">
+        <span>This is testing blog post title 01</span>
+        <span class="text-gray-400">This is short description of this blog no 01. </span>
+    </div>
+
+   <div class="flex flex-row justify-between items-center">
+    <span class="flex items-center text-gray-500">
+        <span class="material-icons" style="font-size: 20px;">calendar_month</span>
+        13/09/2022
+    </span>
+
+
+    <div class="hidden sm:text-gray-500 sm:flex ">
+        <span class="material-icons">sell</span>
+        <span class="flex ml-1">Travalling, Jurney, Turist Place, Tour</span>
+    </div>
+
+
+    <div class="hidden md:text-gray-500 md:flex ">
+        <span class="material-icons">cloud_done</span>
+        <span class="flex ml-1">Uploaded by Admin</span>
+    </div>
+
+
+
+    <span class="flex flex-row items-center text-gray-500">
+        <div class="flex">            
+            <span class="material-icons" style="font-size: 20px;">visibility</span>
+            <span class="ml-1">120</span>
+        </div>
+
+        <div class="flex ml-4">
+            <span class="material-icons">textsms</span></div>
+            <span class="ml-2">29</span>
+    </span>
+   </div>
+</div>
+
+</div>
+ 
+</div>
+
+<div class="flex flex-col mt-7">
+   <div class="text-gray-500 text-center underline">Blog Reports</div>
+
+
+
+   <div class="lg:w-1/2 lg:m-auto lg:items-center">
+         
+<div class="mb-4 border-b  dark:border-gray-700">
+   <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+
+       <li class="mr-2" role="presentation">
+           <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700 " id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Blogs</button>
+       </li>
+       <li class="mr-2" role="presentation">
+           <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Comments</button>
+       </li>
+       <li role="presentation">
+           <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Viwes</button>
+       </li>
+   </ul>
+</div>
+<div id="myTabContent">
+
+   <div class="hidden p-4 bg-slate-900 rounded-lg border border-gray-700 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+       <p class="text-sm text-gray-400 dark:text-gray-400">Top 3 Blogs is here.<br> <strong class="font-medium text-gray-200 dark:text-white">
+         <ul>
+            <li><a href="#">Top post 01</a></li>
+            <li><a href="#">Top post 02</a></li>
+            <li><a href="#">Top post 03</a></li>
+         </ul>
+      </strong>
+      </p>
+   </div>
+   <div class="hidden p-4 bg-slate-900 rounded-lg border border-gray-700 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+      <p class="text-sm text-gray-400 dark:text-gray-400">Blogs with heighst comment:<br> <strong class="font-medium text-gray-200 dark:text-white">
+         <ul>
+            <li><a href="#">Heighst comment 01</a></li>
+            <li><a href="#">Heighst comment 02</a></li>
+            <li><a href="#">Heighst comment 03</a></li>
+         </ul>
+      </strong>
+      </p>
+   </div>
+   <div class="hidden p-4 bg-slate-900 border border-gray-700 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+      <p class="text-sm text-gray-400 dark:text-gray-400">Top Views Blogs is here.<br> <strong class="font-medium text-gray-200 dark:text-white">
+         <ul>
+            <li><a href="#">Top views 01</a></li>
+            <li><a href="#">Top views 02</a></li>
+            <li><a href="#">Top views 03</a></li>
+         </ul>
+      </strong>
+      </p>
+   </div>
+</div>
+   </div>
+
+</div> 
+
+<div class="flex flex-col justify-around w-full mt-7">
+        <div class="text-gray-500 underline text-center">Visitors</div>
+   <div class="flex flex-row w-full justify-around mt-3">
+      <div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:w-2/2 md:h-32 lg:h-[250px]">
+         <div class="flex flex-col items-center text-center text-sm m-auto ">
+             <span class="material-icons text-gray-500"> groups</span>
+             <span class="text-[12px] md:text-sm">Today: 12+</span>
+         </div>
+ </div>
+
+
+<div class="flex flex-row w-2/5 border border-gray-700 bg-slate-800 p-2 rounded md:w-2/2 md:h-32 lg:h-[250px]">
+ <div class="flex flex-col items-center text-center text-sm m-auto">
+     <span class="material-icons text-gray-500"> groups</span>
+     <span class="text-[12px] md:text-sm">Yesterday: 5+</span>
+ </div>
+</div>
+   </div>
+
+
+</div>
+</div>
+    <script src="../main.js"></script>
+</body>
+</html>
+
+
